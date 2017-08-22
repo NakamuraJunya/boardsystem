@@ -7,19 +7,21 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<link href="./css/style.css" rel="stylesheet" type="text/css">
+	<link href="./css/newcomment.css" rel="stylesheet" type="text/css">
 	<title>新規投稿画面</title>
-    <style type="text/css">
-body {
-  background: linear-gradient(to right, gold 0%, orange 100%);/*正規の指定*/
-}
-	</style>
 </head>
 <body>
-<div class="form-area">
-<p><font size="5">新規投稿</font></p>
+			<style type="text/css">
+				body {
+					background:#207cca
+			}
+		}
+	}
+			</style>
+			
+	<h3><font size="8">新規投稿</font></h3>
 
-<div>
+
 <c:if test="${ not empty errorMessages }">
 	<div class="errorMessages">
 		<ul>
@@ -30,7 +32,6 @@ body {
 	</div>
 	<c:remove var="errorMessages" scope="session"/>
 </c:if>
-</div>
 	<script>
 		function check(){
 			if(window.confirm('投稿してもよろしいですか？')){ // 確認ダイアログを表示
@@ -78,12 +79,9 @@ body {
 <p></p>
 <button type="submit" value="投稿">投稿</button>
 </form>
-
 <p></p>
 	<a href="./">ホームに戻る</a>
-
-<p></p>
-<p></p>
-	</div>
+	<p></p>
+</div>
 </body>
 </html>
